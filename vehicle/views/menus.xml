@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<odoo>
+        <menuitem sequence="5" id="menu_main_vehicle" name="Vehicles"
+                  web_icon="static/description/icon.png"/>
+
+        <menuitem id="menu_vehicle" parent="menu_main_vehicle"
+                  action="vehicle_action" sequence="1"/>
+</odoo>
