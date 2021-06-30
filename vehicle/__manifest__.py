@@ -8,20 +8,22 @@
     'name': "Vehicle manager",
     'version': '13.0.0.0.1',
     'summary': """Manage the vehicles from your contacts""",
-    'description': """This Module Enables To manage the vehicles from your customers""",
     'author': "Tècniques d'Avantguarda",
     'company': "Tècniques d'Avantguarda",
     'website': "https://www.tda.ad",
-    'category': 'other',
-    'depends': ['base', 'account'],
+    'category': 'Specific Industry Applications',
+    'depends': ['base', 'contacts', 'account'],
     'data': [
+        'security/security.xml',
+        'security/ir.model.access.csv',
+
+        'data/vehicle_brand_data.xml',
+        'views/vehicle_views.xml',
+        'views/account_invoice_views.xml',
         'views/menus.xml',
-        'views/vehicle_view.xml'
-        # 'views/invoice_stock_move_view.xml'
     ],
-    # 'images': ['static/description/banner.png'],
-    'license': 'AGPL-3',
+    # 'license': 'AGPL-3',
     'installable': True,
-    'auto_install': False,
-    'application': False,
+    # 'auto_install': False,
+    # 'application': False,
 }
