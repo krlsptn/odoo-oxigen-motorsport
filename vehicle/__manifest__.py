@@ -12,7 +12,7 @@
     'company': "Tècniques d'Avantguarda",
     'website': "https://www.tda.ad",
     'category': 'Specific Industry Applications',
-    'depends': ['base', 'contacts', 'account'],
+    'depends': ['account'],
     'data': [
         'security/security.xml',
         'security/ir.model.access.csv',
@@ -25,5 +25,5 @@
     # 'license': 'AGPL-3',
     'installable': True,
     # 'auto_install': False,
-    # 'application': False,
+    'application': True,
 }
