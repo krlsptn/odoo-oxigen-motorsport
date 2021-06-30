@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo noupdate="1">
+
+    <record id="vehicle_brand_ktm" model="vehicle.brand">
+        <field name="brand">KTM</field>
+    </record>
+    <record id="vehicle_brand_gasgas" model="vehicle.brand">
+        <field name="brand">Gas Gas</field>
+    </record>
+    <record id="vehicle_brand_polaris" model="vehicle.brand">
+        <field name="brand">Polaris</field>
+    </record>
+    <record id="vehicle_brand_husqvarna" model="vehicle.brand">
+        <field name="brand">Husqvarna</field>
+    </record>
+    <record id="vehicle_brand_yamaha" model="vehicle.brand">
+        <field name="brand">Yamaha</field>
+    </record>
+    <record id="vehicle_brand_honda" model="vehicle.brand">
+        <field name="brand">Honda</field>
+    </record>
+    <record id="vehicle_brand_royalenfield" model="vehicle.brand">
+        <field name="brand">Royal Enfield</field>
+    </record>
+    <record id="vehicle_brand_tm" model="vehicle.brand">
+        <field name="brand">TM</field>
+    </record>
+    <record id="vehicle_brand_suzuki" model="vehicle.brand">
+        <field name="brand">Suzuki</field>
+    </record>
+    <record id="vehicle_brand_ducati" model="vehicle.brand">
+        <field name="brand">Ducati</field>
+    </record>
+    <record id="vehicle_brand_aprilia" model="vehicle.brand">
+        <field name="brand">Aprilia</field>
+    </record>
+    <record id="vehicle_brand_bmw" model="vehicle.brand">
+        <field name="brand">BMW</field>
+    </record>
+    <record id="vehicle_brand_kymco" model="vehicle.brand">
+        <field name="brand">Kymco</field>
+    </record>
+    <record id="vehicle_brand_kawasaki" model="vehicle.brand">
+        <field name="brand">Kawasaki</field>
+    </record>
+    <record id="vehicle_brand_triumph" model="vehicle.brand">
+        <field name="brand">Triumph</field>
+    </record>
+    <record id="vehicle_brand_norton" model="vehicle.brand">
+        <field name="brand">Norton</field>
+    </record>
+    <record id="vehicle_brand_harleydavidson" model="vehicle.brand">
+        <field name="brand">Harley Davidson</field>
+    </record>
+    <record id="vehicle_brand_sherco" model="vehicle.brand">
+        <field name="brand">Sherco</field>
+    </record>
+    <record id="vehicle_brand_cfmoto" model="vehicle.brand">
+        <field name="brand">CF Moto</field>
+    </record>
+    <record id="vehicle_brand_benelli" model="vehicle.brand">
+        <field name="brand">Benelli</field>
+    </record>
+    <record id="vehicle_brand_indian" model="vehicle.brand">
+        <field name="brand">Indian</field>
+    </record>
+    <record id="vehicle_brand_bimota" model="vehicle.brand">
+        <field name="brand">Bimota</field>
+    </record>
+    <record id="vehicle_brand_daelim" model="vehicle.brand">
+        <field name="brand">Daelim</field>
+    </record>
+    <record id="vehicle_brand_canam" model="vehicle.brand">
+        <field name="brand">an-am</field>
+    </record>
+    <record id="vehicle_brand_derbi" model="vehicle.brand">
+        <field name="brand">Derbi</field>
+    </record>
+    <record id="vehicle_brand_hyosung" model="vehicle.brand">
+        <field name="brand">Hyosung</field>
+    </record>
+    <record id="vehicle_brand_lambretta" model="vehicle.brand">
+        <field name="brand">Lambretta</field>
+    </record>
+    <record id="vehicle_brand_piaggio" model="vehicle.brand">
+        <field name="brand">Piaggio</field>
+    </record>
+    <record id="vehicle_brand_macbor" model="vehicle.brand">
+        <field name="brand">Macbor</field>
+    </record>
+    <record id="vehicle_brand_keeway" model="vehicle.brand">
+        <field name="brand">Keeway</field>
+    </record>
+    <record id="vehicle_brand_mitt" model="vehicle.brand">
+        <field name="brand">mitt</field>
+    </record>
+    <record id="vehicle_brand_montesa" model="vehicle.brand">
+        <field name="brand">Montesa</field>
+    </record>
+    <record id="vehicle_brand_motoguzzi" model="vehicle.brand">
+        <field name="brand">Moto Guzzi</field>
+    </record>
+    <record id="vehicle_brand_peugeot" model="vehicle.brand">
+        <field name="brand">Peugeot</field>
+    </record>
+    <record id="vehicle_brand_mvagusta" model="vehicle.brand">
+        <field name="brand">MV Agusta</field>
+    </record>
+    <record id="vehicle_brand_rieju" model="vehicle.brand">
+        <field name="brand">Rieju</field>
+    </record>
+    <record id="vehicle_brand_vespa" model="vehicle.brand">
+        <field name="brand">Vespa</field>
+    </record>
+    <record id="vehicle_brand_suzuki" model="vehicle.brand">
+        <field name="brand">Suzuki</field>
+    </record>
+    <record id="vehicle_brand_sym" model="vehicle.brand">
+        <field name="brand">SYM</field>
+    </record>
+
+</odoo>

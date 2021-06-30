@@ -1,0 +1,16 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+
+access_vehicle_right_manager,vehicle_manager,model_vehicle,vehicle_full,1,1,1,1
+access_vehicle_right_user,vehicle_user,model_vehicle,vehicle_readonly,1,0,0,0
+
+access_vehicle_note_right_manager,vehicle_note_manager,model_vehicle_note,vehicle_full,1,1,1,1
+access_vehicle_note_right_user,vehicle_note_user,model_vehicle_note,vehicle_readonly,1,0,0,0
+
+access_vehicle_brand_right_manager,vehicle_brand_manager,model_vehicle_brand,vehicle_full,1,1,1,1
+access_vehicle_brand_right_user,vehicle_brand_user,model_vehicle_brand,vehicle_readonly,1,0,0,0
+
+access_vehicle_brand_model_right_manager,vehicle_brand_model_manager,model_vehicle_brand_model,vehicle_full,1,1,1,1
+access_vehicle_brand_model_right_user,vehicle_brand_model_user,model_vehicle_brand_model,vehicle_readonly,1,0,0,0
+
+access_vehicle_owner_register_right_manager,vehicle_owner_register_manager,model_vehicle_owner_register,vehicle_full,1,1,1,1
+access_vehicle_owner_register_right_user,vehicle_owner_register_user,model_vehicle_owner_register,vehicle_readonly,1,0,0,0
