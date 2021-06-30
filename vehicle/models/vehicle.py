@@ -30,6 +30,7 @@ class VehicleBrand(models.Model):
 
 class VehicleBrandModel(models.Model):
     _name = 'vehicle.brand.model'
+    _rec_name = 'brand_model'
 
     brand_model = fields.Char(required=True)
     vehicle_brand_id = fields.Many2one('vehicle.brand', required=True)
@@ -47,7 +48,8 @@ class Vehicle(models.Model):
     owner_name = fields.Char(related='owner_res_partner_id.name')
 
     vehicle_brand_id = fields.Many2one('vehicle.brand')
-    vehicle_brand_model_id = fields.Many2one('vehicle.brand.model')  # faltara el domain
+    vehicle_brand_model_id = fields.Many2one('vehicle.brand.model',
+                                             domain="[('vehicle_brand_id', '=', vehicle_brand_id)]")
 
     vehicle_registration = fields.Char()
     vehicle_manufacturing_year = fields.Integer()
@@ -59,22 +61,23 @@ class Vehicle(models.Model):
 
     vehicle_note_ids = fields.One2many('vehicle.note', 'vehicle_id')
     invoice_move_ids = fields.One2many('account.move', 'vehicle_id')
-    last_invoice_move_id = fields.Many2one('account.move', compute='_compute_last_invoice_move_id', store=True)
+    last_invoice_move_id = fields.Many2one('account.move', compute='_compute_last_invoice_move_id')
     vehicle_owner_registration_ids = fields.One2many('vehicle.owner.register', 'vehicle_id')
 
-    @api.depends('invoice_move_ids')
     def _compute_last_invoice_move_id(self):
         for this in self:
             if this.invoice_move_ids:
-                last_invoice = False
+                last_invoice = None
                 for invoice in this.invoice_move_ids:
                     if invoice.state == 'posted':
                         if not last_invoice:
                             last_invoice = invoice
                         else:
-                            if this.last_invoice_move_id.invoice_date > last_invoice.invoice_date:
+                            if invoice.invoice_date > last_invoice.invoice_date:
                                 last_invoice = invoice
                 this.last_invoice_move_id = last_invoice
+            else:
+                this.last_invoice_move_id = None
 
     @api.depends('vehicle_registration', 'owner_name')
     def _compute_vehicle_name(self):
