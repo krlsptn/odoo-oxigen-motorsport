@@ -16,10 +16,10 @@
                             <field name="vehicle_registration"/>
                             <field name="vehicle_brand_id" options="{'no_create': True, 'no_open': True}"/>
                             <field name="vehicle_brand_model_id" options="{'no_create': False, 'no_open': True}"/>
-
                             <field name="owner_res_partner_id" options="{'no_create': True, 'no_open': True}"/>
                         </group>
                         <group>
+                            <field name="vehicle_kilometers" string="Km"/>
                             <field name="vehicle_manufacturing_year"/>
                             <field name="vehicle_first_registration_date"/>
                             <field name="vehicle_cubic_centimetres_size"/>
@@ -60,7 +60,7 @@
                                 <field name="vehicle_owner_registration_ids" nolabel="1">
                                     <tree editable="bottom">
                                         <field name="date_of_transaction" string="Date"/>
-                                        <field name="res_partner_id" options="{'no_create': True}"/>
+                                        <field name="res_partner_id" string="Owner" options="{'no_create': True}"/>
                                         <field name="note"/>
                                     </tree>
                                 </field>
