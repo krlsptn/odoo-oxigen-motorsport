@@ -1,0 +1,525 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* vehicle
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 13.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-07-01 09:56+0000\n"
+"PO-Revision-Date: 2021-07-01 09:56+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: vehicle
+#: model:ir.model.fields,field_description:vehicle.field_vehicle__message_needaction
+msgid "Action Needed"
+msgstr ""
+
+#. module: vehicle
+#: model:ir.model.fields,field_description:vehicle.field_vehicle__activity_ids
+msgid "Activities"
+msgstr ""
+
+#. module: vehicle
+#: model:ir.model.fields,field_description:vehicle.field_vehicle__activity_exception_decoration
+msgid "Activity Exception Decoration"
+msgstr ""
+
+#. module: vehicle
+#: model:ir.model.fields,field_description:vehicle.field_vehicle__activity_state
+msgid "Activity State"
+msgstr ""
+
+#. module: vehicle
+#: model:ir.model.fields,field_description:vehicle.field_vehicle__message_attachment_count
+msgid "Attachment Count"
+msgstr ""
+
+#. module: vehicle
+#: model:ir.model.fields,field_description:vehicle.field_vehicle_brand__brand
+#: model_terms:ir.ui.view,arch_db:vehicle.vehicle_filter
+msgid "Brand"
+msgstr "Marca"
+
+#. module: vehicle
+#: model:ir.model.fields,field_description:vehicle.field_vehicle_brand_model__brand_model
+msgid "Brand Model"
+msgstr "Modelo"
+
+#. module: vehicle
+#: model:ir.actions.act_window,name:vehicle.vehicle_brand_action
+#: model:ir.ui.menu,name:vehicle.menu_vehicle_brand
+msgid "Brands"
+msgstr "Marcas"
+
+#. module: vehicle
+#: model:ir.ui.menu,name:vehicle.menu_vehicle_configuration
+msgid "Configuration"
+msgstr "Configuración"
+
+#. module: vehicle
+#: model:ir.model.fields,field_description:vehicle.field_vehicle__create_uid
+#: model:ir.model.fields,field_description:vehicle.field_vehicle_brand__create_uid
+#: model:ir.model.fields,field_description:vehicle.field_vehicle_brand_model__create_uid
+#: model:ir.model.fields,field_description:vehicle.field_vehicle_note__create_uid
+#: model:ir.model.fields,field_description:vehicle.field_vehicle_owner_register__create_uid
+msgid "Created by"
+msgstr ""
+
+#. module: vehicle
+#: model:ir.model.fields,field_description:vehicle.field_vehicle__create_date
+#: model:ir.model.fields,field_description:vehicle.field_vehicle_brand__create_date
+#: model:ir.model.fields,field_description:vehicle.field_vehicle_brand_model__create_date
+#: model:ir.model.fields,field_description:vehicle.field_vehicle_note__create_date
+#: model:ir.model.fields,field_description:vehicle.field_vehicle_owner_register__create_date
+msgid "Created on"
+msgstr ""
+
+#. module: vehicle
+#: model_terms:ir.ui.view,arch_db:vehicle.vehicle_form_view
+msgid "Date"
+msgstr ""
+
+#. module: vehicle
+#: model:ir.model.fields,field_description:vehicle.field_vehicle_note__date_note
+msgid "Date Note"
+msgstr "Fecha nota"
+
+#. module: vehicle
+#: model:ir.model.fields,field_description:vehicle.field_vehicle_owner_register__date_of_transaction
+msgid "Date Of Transaction"
+msgstr "Fecha de transacción"
+
+#. module: vehicle
+#: model:ir.model.fields,field_description:vehicle.field_vehicle_note__description
+msgid "Description"
+msgstr "Descripción"
+
+#. module: vehicle
+#: model:ir.model.fields,field_description:vehicle.field_vehicle__display_name
+#: model:ir.model.fields,field_description:vehicle.field_vehicle_brand__display_name
+#: model:ir.model.fields,field_description:vehicle.field_vehicle_brand_model__display_name
+#: model:ir.model.fields,field_description:vehicle.field_vehicle_note__display_name
+#: model:ir.model.fields,field_description:vehicle.field_vehicle_owner_register__display_name
+msgid "Display Name"
+msgstr "Nombre"
+
+#. module: vehicle
+#: model:ir.model.fields,field_description:vehicle.field_vehicle__message_follower_ids
+msgid "Followers"
+msgstr ""
+
+#. module: vehicle
+#: model:ir.model.fields,field_description:vehicle.field_vehicle__message_channel_ids
+msgid "Followers (Channels)"
+msgstr ""
+
+#. module: vehicle
+#: model:ir.model.fields,field_description:vehicle.field_vehicle__message_partner_ids
+msgid "Followers (Partners)"
+msgstr ""
+
+#. module: vehicle
+#: model_terms:ir.ui.view,arch_db:vehicle.vehicle_form_view
+msgid "General info."
+msgstr "Info. general"
+
+#. module: vehicle
+#: model_terms:ir.ui.view,arch_db:vehicle.vehicle_brand_model_filter
+#: model_terms:ir.ui.view,arch_db:vehicle.vehicle_filter
+msgid "Group By"
+msgstr ""
+
+#. module: vehicle
+#: model:ir.model.fields,field_description:vehicle.field_vehicle__id
+#: model:ir.model.fields,field_description:vehicle.field_vehicle_brand__id
+#: model:ir.model.fields,field_description:vehicle.field_vehicle_brand_model__id
+#: model:ir.model.fields,field_description:vehicle.field_vehicle_note__id
+#: model:ir.model.fields,field_description:vehicle.field_vehicle_owner_register__id
+msgid "ID"
+msgstr ""
+
+#. module: vehicle
+#: model:ir.model.fields,field_description:vehicle.field_vehicle__activity_exception_icon
+msgid "Icon"
+msgstr ""
+
+#. module: vehicle
+#: model:ir.model.fields,help:vehicle.field_vehicle__activity_exception_icon
+msgid "Icon to indicate an exception activity."
+msgstr ""
+
+#. module: vehicle
+#: model:ir.model.fields,help:vehicle.field_vehicle__message_needaction
+#: model:ir.model.fields,help:vehicle.field_vehicle__message_unread
+msgid "If checked, new messages require your attention."
+msgstr ""
+
+#. module: vehicle
+#: model:ir.model.fields,help:vehicle.field_vehicle__message_has_error
+#: model:ir.model.fields,help:vehicle.field_vehicle__message_has_sms_error
+msgid "If checked, some messages have a delivery error."
+msgstr ""
+
+#. module: vehicle
+#: model:ir.model.fields,field_description:vehicle.field_vehicle__invoice_move_ids
+msgid "Invoice Move"
+msgstr "Factura"
+
+#. module: vehicle
+#: model_terms:ir.ui.view,arch_db:vehicle.vehicle_form_view
+msgid "Invoices"
+msgstr "Facturas"
+
+#. module: vehicle
+#: model:ir.model.fields,field_description:vehicle.field_vehicle__message_is_follower
+msgid "Is Follower"
+msgstr ""
+
+#. module: vehicle
+#: model:ir.model,name:vehicle.model_account_move
+msgid "Journal Entries"
+msgstr "Asientos contables"
+
+#. module: vehicle
+#: model:ir.model.fields,field_description:vehicle.field_vehicle__last_invoice_move_id
+msgid "Last Invoice Move"
+msgstr ""
+
+#. module: vehicle
+#: model:ir.model.fields,field_description:vehicle.field_vehicle____last_update
+#: model:ir.model.fields,field_description:vehicle.field_vehicle_brand____last_update
+#: model:ir.model.fields,field_description:vehicle.field_vehicle_brand_model____last_update
+#: model:ir.model.fields,field_description:vehicle.field_vehicle_note____last_update
+#: model:ir.model.fields,field_description:vehicle.field_vehicle_owner_register____last_update
+msgid "Last Modified on"
+msgstr ""
+
+#. module: vehicle
+#: model:ir.model.fields,field_description:vehicle.field_vehicle__write_uid
+#: model:ir.model.fields,field_description:vehicle.field_vehicle_brand__write_uid
+#: model:ir.model.fields,field_description:vehicle.field_vehicle_brand_model__write_uid
+#: model:ir.model.fields,field_description:vehicle.field_vehicle_note__write_uid
+#: model:ir.model.fields,field_description:vehicle.field_vehicle_owner_register__write_uid
+msgid "Last Updated by"
+msgstr ""
+
+#. module: vehicle
+#: model:ir.model.fields,field_description:vehicle.field_vehicle__write_date
+#: model:ir.model.fields,field_description:vehicle.field_vehicle_brand__write_date
+#: model:ir.model.fields,field_description:vehicle.field_vehicle_brand_model__write_date
+#: model:ir.model.fields,field_description:vehicle.field_vehicle_note__write_date
+#: model:ir.model.fields,field_description:vehicle.field_vehicle_owner_register__write_date
+msgid "Last Updated on"
+msgstr ""
+
+#. module: vehicle
+#: model:ir.model.fields,field_description:vehicle.field_vehicle__message_main_attachment_id
+msgid "Main Attachment"
+msgstr ""
+
+#. module: vehicle
+#: model_terms:ir.actions.act_window,help:vehicle.vehicle_brand_action
+msgid "Manager for brands"
+msgstr "Gestor de marcas"
+
+#. module: vehicle
+#: model_terms:ir.actions.act_window,help:vehicle.vehicle_brand_model_action
+msgid "Manager for models"
+msgstr "Gestor de modelos"
+
+#. module: vehicle
+#: model_terms:ir.actions.act_window,help:vehicle.vehicle_action
+msgid "Manager for vehicles"
+msgstr "Gestor de vehículos"
+
+#. module: vehicle
+#: model:ir.model.fields,field_description:vehicle.field_vehicle__message_has_error
+msgid "Message Delivery error"
+msgstr ""
+
+#. module: vehicle
+#: model:ir.model.fields,field_description:vehicle.field_vehicle__message_ids
+msgid "Messages"
+msgstr ""
+
+#. module: vehicle
+#: model_terms:ir.ui.view,arch_db:vehicle.vehicle_brand_model_filter
+#: model_terms:ir.ui.view,arch_db:vehicle.vehicle_filter
+msgid "Model"
+msgstr "Modelo"
+
+#. module: vehicle
+#: model_terms:ir.ui.view,arch_db:vehicle.vehicle_brand_model_form_view
+msgid "Model Form"
+msgstr "Formulario de modelo"
+
+#. module: vehicle
+#: model_terms:ir.ui.view,arch_db:vehicle.vehicle_brand_model_tree_view
+msgid "Model Tree"
+msgstr ""
+
+#. module: vehicle
+#: model:ir.actions.act_window,name:vehicle.vehicle_brand_model_action
+#: model:ir.ui.menu,name:vehicle.menu_vehicle_brand_model
+#: model_terms:ir.ui.view,arch_db:vehicle.vehicle_brand_model_filter
+msgid "Models"
+msgstr "Modelos"
+
+#. module: vehicle
+#: model:res.groups,name:vehicle.vehicle_full
+msgid "Modify"
+msgstr ""
+
+#. module: vehicle
+#: model:ir.model.fields,field_description:vehicle.field_vehicle__owner_name
+msgid "Name"
+msgstr "Nombre"
+
+#. module: vehicle
+#: model:ir.model.fields,field_description:vehicle.field_vehicle__activity_date_deadline
+msgid "Next Activity Deadline"
+msgstr ""
+
+#. module: vehicle
+#: model:ir.model.fields,field_description:vehicle.field_vehicle__activity_summary
+msgid "Next Activity Summary"
+msgstr ""
+
+#. module: vehicle
+#: model:ir.model.fields,field_description:vehicle.field_vehicle__activity_type_id
+msgid "Next Activity Type"
+msgstr ""
+
+#. module: vehicle
+#: model:ir.model.fields,field_description:vehicle.field_vehicle_owner_register__note
+#: model_terms:ir.ui.view,arch_db:vehicle.vehicle_form_view
+msgid "Note"
+msgstr "Nota"
+
+#. module: vehicle
+#: model_terms:ir.ui.view,arch_db:vehicle.vehicle_form_view
+msgid "Notes"
+msgstr "Notas"
+
+#. module: vehicle
+#: model:ir.model.fields,field_description:vehicle.field_vehicle__message_needaction_counter
+msgid "Number of Actions"
+msgstr ""
+
+#. module: vehicle
+#: model:ir.model.fields,field_description:vehicle.field_vehicle__message_has_error_counter
+msgid "Number of errors"
+msgstr ""
+
+#. module: vehicle
+#: model:ir.model.fields,help:vehicle.field_vehicle__message_needaction_counter
+msgid "Number of messages which requires an action"
+msgstr ""
+
+#. module: vehicle
+#: model:ir.model.fields,help:vehicle.field_vehicle__message_has_error_counter
+msgid "Number of messages with delivery error"
+msgstr ""
+
+#. module: vehicle
+#: model:ir.model.fields,help:vehicle.field_vehicle__message_unread_counter
+msgid "Number of unread messages"
+msgstr ""
+
+#. module: vehicle
+#: model_terms:ir.ui.view,arch_db:vehicle.vehicle_form_view
+msgid "Old owners"
+msgstr "Antiguos propietarios"
+
+#. module: vehicle
+#: model_terms:ir.ui.view,arch_db:vehicle.vehicle_filter
+msgid "Owner"
+msgstr "Propietario"
+
+#. module: vehicle
+#: model:ir.model.fields,field_description:vehicle.field_vehicle__owner_res_partner_id
+msgid "Owner Res Partner"
+msgstr "Propietario"
+
+#. module: vehicle
+#: model:res.groups,name:vehicle.vehicle_readonly
+msgid "Read"
+msgstr ""
+
+#. module: vehicle
+#: model:ir.model.fields,field_description:vehicle.field_vehicle_owner_register__res_partner_id
+msgid "Res Partner"
+msgstr ""
+
+#. module: vehicle
+#: model:ir.model.fields,field_description:vehicle.field_vehicle__activity_user_id
+msgid "Responsible User"
+msgstr ""
+
+#. module: vehicle
+#: model:ir.model.fields,field_description:vehicle.field_vehicle__message_has_sms_error
+msgid "SMS Delivery error"
+msgstr ""
+
+#. module: vehicle
+#: model:ir.model.fields,help:vehicle.field_vehicle__activity_state
+msgid ""
+"Status based on activities\n"
+"Overdue: Due date is already passed\n"
+"Today: Activity date is today\n"
+"Planned: Future activities."
+msgstr ""
+
+#. module: vehicle
+#: model:ir.model.fields,field_description:vehicle.field_vehicle_note__title
+msgid "Title"
+msgstr "Titulo"
+
+#. module: vehicle
+#: model:ir.model.fields,help:vehicle.field_vehicle__activity_exception_decoration
+msgid "Type of the exception activity on record."
+msgstr ""
+
+#. module: vehicle
+#: model:ir.model.fields,field_description:vehicle.field_vehicle__message_unread
+msgid "Unread Messages"
+msgstr ""
+
+#. module: vehicle
+#: model:ir.model.fields,field_description:vehicle.field_vehicle__message_unread_counter
+msgid "Unread Messages Counter"
+msgstr ""
+
+#. module: vehicle
+#: model:ir.actions.act_window,name:vehicle.vehicle_action
+#: model:ir.model,name:vehicle.model_vehicle
+#: model:ir.model.fields,field_description:vehicle.field_account_move__vehicle_id
+#: model:ir.model.fields,field_description:vehicle.field_vehicle_note__vehicle_id
+#: model:ir.model.fields,field_description:vehicle.field_vehicle_owner_register__vehicle_id
+#: model:ir.module.category,name:vehicle.vehicle_category
+#: model:ir.ui.menu,name:vehicle.menu_vehicle
+msgid "Vehicle"
+msgstr "Vehículo"
+
+#. module: vehicle
+#: model:ir.model.fields,field_description:vehicle.field_vehicle__vehicle_brand_id
+#: model:ir.model.fields,field_description:vehicle.field_vehicle_brand_model__vehicle_brand_id
+msgid "Vehicle Brand"
+msgstr "Marca"
+
+#. module: vehicle
+#: model:ir.model.fields,field_description:vehicle.field_vehicle__vehicle_brand_model_id
+msgid "Vehicle Brand Model"
+msgstr "Modelo"
+
+#. module: vehicle
+#: model:ir.model.fields,field_description:vehicle.field_vehicle__vehicle_cubic_centimetres_size
+msgid "Vehicle Cubic Centimetres Size"
+msgstr "Centímetros cúbicos"
+
+#. module: vehicle
+#: model:ir.model.fields,field_description:vehicle.field_vehicle__vehicle_first_registration_date
+msgid "Vehicle First Registration Date"
+msgstr "Primera fecha de matriculación"
+
+#. module: vehicle
+#: model_terms:ir.ui.view,arch_db:vehicle.vehicle_form_view
+msgid "Vehicle Form"
+msgstr "Formulario de vehículo"
+
+#. module: vehicle
+#: model:ir.model.fields,field_description:vehicle.field_vehicle__vehicle_general_note
+msgid "Vehicle General Note"
+msgstr "Nota general"
+
+#. module: vehicle
+#: model:ir.model.fields,field_description:vehicle.field_vehicle__vehicle_horsepower
+msgid "Vehicle Horsepower"
+msgstr "Caballos"
+
+#. module: vehicle
+#: model:ir.model.fields,field_description:vehicle.field_account_move__vehicle_invoice_date
+msgid "Vehicle Invoice Date"
+msgstr "Fecha de factura"
+
+#. module: vehicle
+#: model:ir.model.fields,field_description:vehicle.field_vehicle__vehicle_kilometers
+msgid "Vehicle Kilometers"
+msgstr "Kilómetros"
+
+#. module: vehicle
+#: model:ir.model.fields,field_description:vehicle.field_vehicle__vehicle_manufacturing_year
+msgid "Vehicle Manufacturing Year"
+msgstr "Año de fabricación"
+
+#. module: vehicle
+#: model:ir.model.fields,field_description:vehicle.field_vehicle__vehicle_name
+msgid "Vehicle Name"
+msgstr "Vehículo"
+
+#. module: vehicle
+#: model:ir.model.fields,field_description:vehicle.field_vehicle__vehicle_note_ids
+msgid "Vehicle Note"
+msgstr "Nota"
+
+#. module: vehicle
+#: model:ir.model.fields,field_description:vehicle.field_vehicle__vehicle_owner_registration_ids
+msgid "Vehicle Owner Registration"
+msgstr "Registro de propietario"
+
+#. module: vehicle
+#: model:ir.model.fields,field_description:vehicle.field_vehicle__vehicle_registration
+msgid "Vehicle Registration"
+msgstr "Registro de vehículo"
+
+#. module: vehicle
+#: model_terms:ir.ui.view,arch_db:vehicle.vehicle_tree_view
+msgid "Vehicle Tree"
+msgstr ""
+
+#. module: vehicle
+#: model:ir.ui.menu,name:vehicle.menu_main_vehicle
+#: model_terms:ir.ui.view,arch_db:vehicle.vehicle_filter
+msgid "Vehicles"
+msgstr "Vehiculos"
+
+#. module: vehicle
+#: model:ir.model.fields,field_description:vehicle.field_vehicle__website_message_ids
+msgid "Website Messages"
+msgstr ""
+
+#. module: vehicle
+#: model:ir.model.fields,help:vehicle.field_vehicle__website_message_ids
+msgid "Website communication history"
+msgstr ""
+
+#. module: vehicle
+#: model_terms:ir.ui.view,arch_db:vehicle.vehicle_filter
+msgid "Year"
+msgstr "Año"
+
+#. module: vehicle
+#: model:ir.model,name:vehicle.model_vehicle_brand
+msgid "vehicle.brand"
+msgstr "Marca"
+
+#. module: vehicle
+#: model:ir.model,name:vehicle.model_vehicle_brand_model
+msgid "vehicle.brand.model"
+msgstr "Modelo"
+
+#. module: vehicle
+#: model:ir.model,name:vehicle.model_vehicle_note
+msgid "vehicle.note"
+msgstr "Nota"
+
+#. module: vehicle
+#: model:ir.model,name:vehicle.model_vehicle_owner_register
+msgid "vehicle.owner.register"
+msgstr "Registro de propietario"

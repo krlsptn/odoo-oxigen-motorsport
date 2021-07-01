@@ -36,7 +36,7 @@
                                 <field name="invoice_move_ids" nolabel="1">
                                     <tree editable="false" create="false" delete="false">
                                         <field name="name"/>
-                                        <field name="ref"/>
+                                        <field name="ref" readonly="1"/>
                                         <field name="vehicle_invoice_date" string="Date"/>
                                         <field name="amount_total"/>
                                         <field name="invoice_payment_state"/>
