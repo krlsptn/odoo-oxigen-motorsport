@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<odoo>
+
+    <record model="ir.ui.view" id="vehicle_form_view">
+        <field name="name">vehicle.form</field>
+        <field name="model">vehicle</field>
+        <field name="arch" type="xml">
+            <form string="Vehicle Form">
+                <sheet>
+                    <h2>
+                        <field name="vehicle_name" nolabel="1"/>
+                    </h2>
+                    <group string="General info.">
+                        <group>
+                            <field name="vehicle_registration"/>
+                            <field name="vehicle_brand_id" options="{'no_create': True, 'no_open': True}"/>
+                            <field name="vehicle_brand_model_id" options="{'no_create': False, 'no_open': True}"/>
+
+                            <field name="owner_res_partner_id" options="{'no_create': True, 'no_open': True}"/>
+                        </group>
+                        <group>
+                            <field name="vehicle_manufacturing_year"/>
+                            <field name="vehicle_first_registration_date"/>
+                            <field name="vehicle_cubic_centimetres_size"/>
+                            <field name="vehicle_horsepower"/>
+                        </group>
+                    </group>
+                    <group string="Note">
+                        <field name="vehicle_general_note" nolabel="1"/>
+                    </group>
+
+                    <notebook>
+                        <page string="Invoices" name="invoices_page">
+                            <group>
+                                <field name="invoice_move_ids" nolabel="1">
+                                    <tree editable="false" create="false" delete="false">
+                                        <field name="name"/>
+                                        <field name="ref" readonly="1"/>
+                                        <field name="vehicle_invoice_date" string="Date"/>
+                                        <field name="amount_total"/>
+                                        <field name="invoice_payment_state"/>
+                                    </tree>
+                                </field>
+                            </group>
+                        </page>
+                        <page string="Notes">
+                            <group>
+                                <field name="vehicle_note_ids" nolabel="1">
+                                    <tree editable="bottom">
+                                        <field name="date_note"/>
+                                        <field name="title"/>
+                                        <field name="description"/>
+                                    </tree>
+                                </field>
+                            </group>
+                        </page>
+                        <page string="Old owners">
+                            <group>
+                                <field name="vehicle_owner_registration_ids" nolabel="1">
+                                    <tree editable="bottom">
+                                        <field name="date_of_transaction" string="Date"/>
+                                        <field name="res_partner_id" options="{'no_create': True}"/>
+                                        <field name="note"/>
+                                    </tree>
+                                </field>
+                            </group>
+                        </page>
+                    </notebook>
+                </sheet>
+                <div class="oe_chatter">
+                    <field name="message_follower_ids" widget="mail_followers"/>
+                    <field name="activity_ids" widget="mail_activity"/>
+                    <field name="message_ids" widget="mail_thread" options="{'post_refresh': 'recipients'}"/>
+                </div>
+            </form>
+        </field>
+    </record>
+
+
+    <record model="ir.ui.view" id="vehicle_filter">
+        <field name="name">vehicle.search</field>
+        <field name="model">vehicle</field>
+        <field name="arch" type="xml">
+            <search string="Vehicles">
+                <field name="vehicle_registration"/>
+                <field name="owner_name"/>
+                <field name="vehicle_brand_id"/>
+                <field name="vehicle_brand_model_id"/>
+                <separator/>
+                <group expand="0" string="Group By">
+                    <filter name="owner_res_partner_id_group_by" string="Owner"
+                            context="{'group_by':'owner_res_partner_id'}"/>
+                    <filter name="vehicle_brand_id_group_by" string="Brand"
+                            context="{'group_by':'vehicle_brand_id'}"/>
+                    <filter name="vehicle_brand_model_id_group_by" string="Model"
+                            context="{'group_by':'vehicle_brand_model_id'}"/>
+                    <filter name="vehicle_manufacturing_year_group_by" string="Year"
+                            context="{'group_by':'vehicle_manufacturing_year'}"/>
+                </group>
+            </search>
+        </field>
+    </record>
+
+
+    <record model="ir.ui.view" id="vehicle_tree_view">
+        <field name="name">vehicle.tree</field>
+        <field name="model">vehicle</field>
+        <field name="arch" type="xml">
+            <tree string="Vehicle Tree">
+                <field name="vehicle_registration"/>
+                <field name="owner_name"/>
+                <field name="vehicle_brand_id"/>
+                <field name="vehicle_brand_model_id"/>
+                <field name="vehicle_manufacturing_year"/>
+                <field name="vehicle_kilometers"/>
+                <field name="last_invoice_move_id"/>
+            </tree>
+        </field>
+    </record>
+
+    <record model="ir.actions.act_window" id="vehicle_action">
+        <field name="name">Vehicle</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">vehicle</field>
+        <field name="view_mode">tree,form</field>
+        <field name="help" type="html">
+            <p class="oe_view_nocontent_create">Manager for vehicles</p>
+        </field>
+    </record>
+
+    <!--    vehicle brand models views-->
+    <record model="ir.ui.view" id="vehicle_brand_model_form_view">
+        <field name="name">vehicle.brand.model.form</field>
+        <field name="model">vehicle.brand.model</field>
+        <field name="arch" type="xml">
+            <form string="Model Form">
+                <sheet>
+                    <group>
+                        <group>
+                            <field name="vehicle_brand_id" options="{'no_create': True, 'no_open': True}"/>
+                            <field name="brand_model"/>
+                        </group>
+                        <group>
+                        </group>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record model="ir.ui.view" id="vehicle_brand_model_filter">
+        <field name="name">vehicle.brand_model.search</field>
+        <field name="model">vehicle.brand.model</field>
+        <field name="arch" type="xml">
+            <search string="Models">
+                <field name="brand_model"/>
+                <field name="vehicle_brand_id"/>
+                <separator/>
+                <group expand="0" string="Group By">
+                    <filter name="brand_model_group_by" string="Model"
+                            context="{'group_by':'brand_model'}"/>
+                </group>
+            </search>
+        </field>
+    </record>
+
+    <record model="ir.ui.view" id="vehicle_brand_model_tree_view">
+        <field name="name">vehicle.brand.model.tree</field>
+        <field name="model">vehicle.brand.model</field>
+        <field name="arch" type="xml">
+            <tree string="Model Tree">
+                <field name="vehicle_brand_id"/>
+                <field name="brand_model"/>
+            </tree>
+        </field>
+    </record>
+
+    <record model="ir.actions.act_window" id="vehicle_brand_model_action">
+        <field name="name">Models</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">vehicle.brand.model</field>
+        <field name="view_mode">tree,form</field>
+        <field name="help" type="html">
+            <p class="oe_view_nocontent_create">Manager for models</p>
+        </field>
+    </record>
+
+    <!--    vehicle brand views-->
+    <record model="ir.actions.act_window" id="vehicle_brand_action">
+        <field name="name">Brands</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">vehicle.brand</field>
+        <field name="view_mode">tree,form</field>
+        <field name="help" type="html">
+            <p class="oe_view_nocontent_create">Manager for brands</p>
+        </field>
+    </record>
+
+</odoo>

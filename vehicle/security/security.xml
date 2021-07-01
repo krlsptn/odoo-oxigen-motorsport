@@ -1,0 +1,16 @@
+<odoo>
+        <record id="vehicle_category" model="ir.module.category">
+            <field name="name">Vehicle</field>
+        </record>
+
+        <record id="vehicle_readonly" model="res.groups">
+            <field name="name">Read</field>
+            <field name="category_id" ref="vehicle_category"></field>
+        </record>
+        <record id="vehicle_full" model="res.groups">
+            <field name="name">Modify</field>
+            <field name="category_id" ref="vehicle_category"></field>
+            <field name="implied_ids" eval="[(4, ref('vehicle_readonly'))]"></field>
+        </record>
+
+</odoo>
