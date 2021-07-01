@@ -6,7 +6,7 @@
 #############################################################################
 {
     'name': "Vehicle manager",
-    'version': '13.0.0.0.2',
+    'version': '13.0.0.0.3',
     'summary': """Manage the vehicles from your contacts""",
     'author': "Tècniques d'Avantguarda",
     'company': "Tècniques d'Avantguarda",
