@@ -1,2 +1,2 @@
 # odoo-oxigen-motorsport
-fer commit per migracio
+fer commit per migracio 2
