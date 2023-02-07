@@ -39,7 +39,7 @@
                                         <field name="ref" readonly="1"/>
                                         <field name="vehicle_invoice_date" string="Date"/>
                                         <field name="amount_total"/>
-                                        <field name="invoice_payment_state"/>
+                                       
                                     </tree>
                                 </field>
                             </group>
