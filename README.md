@@ -1,2 +1,2 @@
 # odoo-oxigen-motorsport
-upgrade validation 2
+upgrade validation 3
